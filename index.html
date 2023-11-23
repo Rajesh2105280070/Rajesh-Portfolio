@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerries.css">
+</head>
+
+<body>
+    <nav id="firstNav">
+        <div class="logo">Rajesh Kumar Pattanaik</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#course">Courses</a></li>
+                <li><a href="#certificate">Cerification</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="secondNav">
+        <div class="logo">Rajesh Kumar Pattanaik</div>
+        <div class="nav-menu">
+            <div class="nav-icon" onclick="NavMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="NavMenu()">About</a></li>
+                <li><a href="#course" onclick="NavMenu()">Courses</a></li>
+                <li><a href="#certificate" onclick="NavMenu()">Cerification</a></li>
+                <li><a href="#contact" onclick="NavMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="sectionpic-container">
+            <img src="public/images/a10.JPG" alt="Rajesh Profile Picture">
+        </div>
+        <div class="section-text">
+            <p class="sectiontext-p1">Hello, I'm</p>
+            <h1 class="title">Rajesh Kumar Pattanaik</h1>
+            <p class="sectiontext-p2">Fresher</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('public/docs/rajesh-resume.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color-1" onclick="location.href='/.#contact'">Contact Info</button>
+            </div>
+            <div id="socialContainer">
+                <img src="public/images/linkedin-logo.png" alt="My Linkedin Profile" class="icon"
+                    onclick="location.href='https://linkedin.com/'">
+                <img src="public/images/github-logo.png" alt="My GitHub Profile" class="icon"
+                    onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="sectiontext-p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="sectionpic-container">
+                <img src="public/images/a2.jpg" alt="My Profile Picture" class="profile-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="public/images/course.png" alt="My Courses" class="icon">
+                        <h3>Courses</h3>
+                        <p>3 month Coures on <br> Core Java and Oracle DB with <br>Continuing <br> UI Web Development
+                            FullStack with React </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="public/images/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>MCA Master Degree <br> B.Sc Bachlors in Science(Information Technology and Management)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur et non ducimus temporibus
+                        sequi, ullam id, doloremque necessitatibus sapiente quaerat incidunt animi eligendi veritatis
+                        nesciunt quos nisi nemo nihil! Ipsam, perspiciatis pariatur nam omnis quod maiores autem enim
+                        impedit! Voluptatibus nobis quaerat vero, recusandae sapiente nihil deserunt delectus modi odio?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="public/images/arrow.png" width="20" height="20" alt="arrow icon" class="icon-arrow"
+            onclick="location.href='./#course'">
+    </section>
+    <section id="course">
+        <p class="sectiontext-p1">Explore My</p>
+        <h1>Courses</h1>
+        <div class="course-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="course-sub-title">Courses Details</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="public/images/core-java-logo.jpeg" alt="Course Icon" class="icon">
+                            <div>
+                                <h3><a href="public/images/core-java.jpg" class="certificate-img">Core Java
+                                        Certificate</a></h3>
+                                <p>3 months Course</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="public/images/oracle-logo.png" alt="Course Icon" class="icon">
+                            <div>
+                                <h3><a href="public/images/oracle-db.jpg" class="certificate-img">Oracle DB
+                                        Certificate</a></h3>
+                                <p>3 months Course</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="public/images/htmlcssjs-logo.png" alt="Course Icon" class="icon">
+                            <div>
+                                <h3><a href="public/images/html-certificate.jpg" class="certificate-img">HTML CSS
+                                        JavaScript Cerificate</a></h3>
+                                <p>3 months Course</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="public/images/ui-full-stack.jpg" alt="Course Icon" class="icon">
+                            <div>
+                                <h3><a href="" class="certificate-img">UI FullStack Web Development with React</a></h3>
+                                <p>6 month Course Continuing Now</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="public/images/arrow.png" width="20" height="20" alt="arrow icon" class="icon-arrow"
+            onclick="location.href='./#certificate'">
+    </section>
+    <section id="onlineCertification">
+        <p class="sectiontext-p1">Browser My Recent</p>
+        <h1 class="title">Online Certification Course</h1>
+        <div class="course-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="public/images/iot.jpg" alt="IoT Certificate" class="certificate-img">
+                    </div>
+                    <h2 class="course-sub-title">NPTEL (IoT Certificate)</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 certificate-btn"
+                            onclick="loction.href='https://archive.nptel.ac.in/'">NPTEL Certificate Details</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="public/images/computer-architechture.jpg" alt="Computer Architecture Certificate"
+                            class="certificate-img">
+                    </div>
+                    <h2 class="course-sub-title">NPTEL (Computer Architechture Certificate)</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 certificate-btn"
+                            onclick="loction.href='https://archive.nptel.ac.in/'">NPTEL Certificate Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="public/images/arrow.png" width="20" height="20" alt="arrow icon" class="icon-arrow"
+            onclick="location.href='./#certificate'">
+    </section>
+    <section id="contact">
+        <p class="sectiontext-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="public/images/email-icon.jpg" alt="Email Icon" class="icon contact-icon">
+                <p><a href="mailto:rajesh.pattanaik2000@gmail.com">Rajesh's Email</a></p>
+            </div>
+                <div class="contact-info-container">
+                    <img src="public/images/linkedin-logo.png" alt="Linked Icon" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com/in/rajesh-kumar-pattanaik-8b92791b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Linked</a></p>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-link-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#course">Courses</a></li>
+                    <li><a href="#certificate">Cerification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Rajesh Kumar Pattanaik. All Right Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
